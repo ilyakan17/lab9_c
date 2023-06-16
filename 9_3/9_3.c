@@ -15,7 +15,7 @@ void printLineWithNumber(int lineNumber, const char *line) {
 void paginateFile(const char *filename, int linesPerPage, int maxLineLength) {
     FILE *file = fopen(filename, "r");
     if (file == NULL) {
-        printf("Ошибка открытия файла.\n");
+        printf("File open error.\n");
         return;
     }
 
